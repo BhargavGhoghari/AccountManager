@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/seeallCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/client_re_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/client_no"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/open_sans_light"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/client_name"
+                android:textSize="@dimen/_12sdp"
+                android:layout_below="@+id/client_re_no"
+                android:fontFamily="@font/open_sans_light"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:id="@+id/client_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_name"
+                android:text="@string/client_phone"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/open_sans_light"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/client_edit"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_marginEnd="@dimen/_5sdp" />
+            <ImageView
+                android:id="@+id/client_delete"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/client_edit"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <ImageView
+                android:id="@+id/client_call"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/client_delete"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

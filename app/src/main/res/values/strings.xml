@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Account Manager</string>
+
+    <!-- Client -->
+    <string name="client_name">Customer Name</string>
+    <string name="client_no">Customer Sr.No</string>
+    <string name="client_phone">Customer Phone</string>
+
+    <string name="cancel_button">Cancel</string>
+    <string name="create_button">Create</string>
+    <string name="update_button">Update</string>
+
+    <!-- Product -->
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_price">Product Price</string>
+
+    <string name="no_search" translatable="false">Sorry we couldn\'t find any result matching</string>
+
+</resources>
